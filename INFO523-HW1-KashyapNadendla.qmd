@@ -3,7 +3,7 @@ title: "INFO523-R-HW1-KashyapNadendla"
 format:
   html:
     theme: default
-    author: "Kashyap Sai Prasad Nadendla"
+author: "Kashyap Sai Prasad Nadendla"
 ---
 
 ## SETUP
@@ -29,7 +29,7 @@ data(algae, package = "DMwR2")
 algae |> glimpse()
 ```
 
-# **Central tendency: mean, median, mode**
+# Central tendency: mean, median, mode
 
 ## Mean
 
@@ -72,51 +72,51 @@ algae$a1 |> centralValue()
 algae$speed |> centralValue()
 ```
 
-# **Statistics of spread (variation)**
+# Statistics of spread (variation)
 
-## **Variance**
+## Variance
 
 ```{r}
 
 algae$a1 |> var()
 ```
 
-## **Standard deviation**
+## Standard deviation
 
 ```{r}
 
 algae$a1 |> sd()
 ```
 
-## **Range**
+## Range
 
 ```{r}
 
 algae$a1 |> range()
 ```
 
-## **Maximum value**
+## Maximum Value
 
 ```{r}
 
 algae$a1 |> max()
 ```
 
-## **Minimum value**
+## Minimum Value
 
 ```{r}
 
 algae$a1 |> min()
 ```
 
-## **Interquartile range**
+## Interquartile range
 
 ```{r}
 
 algae$a1 |> IQR()
 ```
 
-## **Quantiles**
+## Quantiles
 
 ```{r}
 
@@ -130,7 +130,7 @@ Specifying specific quantiles:
 algae$a1 |> quantile(probs = c(0.2, 0.8))
 ```
 
-# **Missing values**
+# Missing values
 
 ```{r}
 
@@ -152,7 +152,7 @@ incomplete_rows <- algae %>%
 cat("The dataset contains ", incomplete_rows, "(out of ", nrow(algae),") incomplete rows. \n")
 ```
 
-# **Summaries of a dataset**
+# Summaries of a dataset
 
 ## Base R's summary()
 
@@ -177,7 +177,7 @@ penguins |> Hmisc::describe()
 penguins |> dlookr::describe()
 ```
 
-# **Summaries on a subset of data**
+# Summaries of a subset of data
 
 ```{r}
 
@@ -224,7 +224,7 @@ penguins |>
   summarise(var = var(bill_length_mm, na.rm = TRUE))
 ```
 
-## **Aggregating data**
+## Aggregating data
 
 ```{r}
 
